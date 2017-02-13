@@ -1,6 +1,7 @@
 <?php
 require_once "../vendor/autoload.php";
 require_once "../init.php";
+require_once "../config/routes.php";
 
 $app = new \Slim\App();
 $app->getContainer()["settings"]["addContentLengthHeader"] = false;
@@ -16,5 +17,6 @@ $twig = new Twig_Environment($twigLoader, [
 
 $app->getContainer()["twig"] = $twig;
 
-require_once "../config/routes.php";
+setupRoutes();
+
 $app->run();

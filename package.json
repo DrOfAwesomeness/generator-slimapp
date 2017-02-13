@@ -1,6 +1,6 @@
 {
   "name": "generator-slimapp",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "PHP + Slim + Twig + Doctrine + Tracy + Bower",
   "homepage": "",
   "author": {
