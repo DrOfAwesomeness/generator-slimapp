@@ -1,0 +1,9 @@
+{
+  "name": "<%= projectName %>",
+  "description": "<%= projectDesc %>",
+  "private": true,
+  "license": "<%= projectLicense %>",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
