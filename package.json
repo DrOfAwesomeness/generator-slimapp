@@ -1,19 +1,20 @@
 {
   "name": "generator-slimapp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "PHP + Slim + Twig + Doctrine + Tracy + Bower",
   "homepage": "",
   "author": {
     "name": "Matthew East",
     "email": "fossprojects@mattheweast.me",
-    "url": ""
+    "url": "https://mattheweast.me"
   },
   "files": [
     "generators"
   ],
   "main": "generators/index.js",
   "keywords": [
-    "",
+    "php",
+    "slim",
     "yeoman-generator"
   ],
   "dependencies": {
