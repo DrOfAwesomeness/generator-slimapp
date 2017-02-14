@@ -1,0 +1,19 @@
+{
+  "name": "TestCorp/TestApp",
+  "description": "Testing Application",
+  "minimum-stability": "stable",
+  "license": "MIT",
+  "require": {
+    "slim/slim": "3.7.0",
+    "doctrine/orm": "^2.5",
+    "doctrine/migrations": "^1.5",
+    "tracy/tracy": "^2.4",
+    "twig/twig": "^2.1",
+    "squizlabs/php_codesniffer": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "TestApp\\": "app/"
+    }
+  }
+}
