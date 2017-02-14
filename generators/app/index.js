@@ -44,7 +44,7 @@ module.exports = Generator.extend({
 
   writing: function () {
     var tplFiles = ['composer.json', 'app/Controllers/HelloController.php', 'app/Views/layout.html.twig', 'config/routes.php', 'init.php', 'bower.json', '.bowerrc'];
-    var normalFiles = ['app/Views/index.html.twig', 'public/index.php', 'config/cli-config.php', 'config.ini', 'config.ini.dist'];
+    var normalFiles = ['app/Views/index.html.twig', 'public/index.php', 'config/cli-config.php', 'config.ini', 'config.ini.dist', 'migrations.yml'];
     tplFiles.forEach(function (file) {
       this.fs.copyTpl(
         this.templatePath(file),
