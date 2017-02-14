@@ -44,7 +44,7 @@ module.exports = Generator.extend({
 
   writing: function () {
     var tplFiles = ['composer.json', 'app/Controllers/HelloController.php', 'app/Views/layout.html.twig', 'config/routes.php', 'init.php', 'bower.json', '.bowerrc'];
-    var normalFiles = ['app/Views/index.html.twig', 'public/index.php', 'config/cli-config.php', 'config.ini', '.gitignore', '.gitattributes', 'config.ini.dist'];
+    var normalFiles = ['app/Views/index.html.twig', 'public/index.php', 'config/cli-config.php', 'config.ini', 'config.ini.dist'];
     tplFiles.forEach(function (file) {
       this.fs.copyTpl(
         this.templatePath(file),
@@ -59,6 +59,16 @@ module.exports = Generator.extend({
         this.destinationPath(file)
       );
     }.bind(this));
+
+    this.fs.copy(
+      this.templatePath('gitignore'),
+      this.destinationPath('.gitignore')
+    );
+
+    this.fs.copy(
+      this.templatePath('gitattributes'),
+      this.destinationPath('.gitattributes')
+    );
   },
 
   install: function () {
